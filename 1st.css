@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    /* overflow: auto; */
+}
+
+.container{
+    min-width:100%;
+    min-height: 100vh;
+    /* background-image: url(game2.jpg); */
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+       
+}
+body{
+    background-image: url(game2.jpg);
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.navbar{
+    min-height: 12%;
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+    overflow: auto;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;   
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 13px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    overflow: auto;
+
+}
+.row::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+
+}
+.row::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: aliceblue;
+    visibility: hidden;
+}
+.row:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+.col{
+    flex-basis: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+h1{
+    color: aliceblue;
+    font-size: 100px;
+
+}
+p{
+    color: aliceblue;
+    font-size: 11px;
+    line-height: 15px;
+}
+/* button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+} */
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(mobilegame1.jpg);
+    background-size: cover;
+    transition: 0.5s;
+    /* color: orange; */
+}
+.card1{
+    background-image: url(game1.jpg);
+    background-position: center;
+
+}
+.card2{
+    background-image: url(movies4.jpg);
+    background-position: center;
+
+}
+.card3{
+    background-image: url(mobilegame2.jpg);
+    background-position: center;
+
+}
+.card4{
+    background-image: url(movies3.jpg);
+    background-position: center;
+
+}
+.card:hover{
+    transform: translateY(-10px);
+
+}
+h5{
+    color: #ffffff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+
+}
+@media all and(min-width:500px) {
+    .container{
+        min-width:100%;
+        min-height: 100vh;
+        /* background-image: url(game2.jpg); */
+        background-position: center;
+        background-size: cover;
+        padding-left: 16%;
+        padding-right: 16%;
+        box-sizing: border-box;
+           
+    }
+    .row{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        overflow: auto;
+    
+    }
+    .row::-webkit-scrollbar{
+        width: 2rem;
+        height: 2rem;
+    
+    }
+    .row::-webkit-scrollbar-thumb{
+        border-radius: .5rem;
+        background-color: aliceblue;
+        visibility: hidden;
+    }
+    .row:hover::-webkit-scrollbar-thumb{
+        visibility: visible;
+    }
+    .col{
+        flex-basis: auto;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    h1{
+        color: aliceblue;
+        font-size: 250px;
+    
+    }
+    p{
+        color: aliceblue;
+        font-size: 50px;
+        line-height: 54px;
+    }
+    
+}
+.card4 h5{
+    color: gold;
+    text-shadow: 0 0 15px gold;
+    /* writing-mode: vertical-lr;
+     transform: rotate(180deg);
+    text-align: right;
+    top: 50px; 
+    left: 50%; */
+}
+.card2 h5{
+    color: gold;
+    text-shadow: 0 0 15px gold;
+}
